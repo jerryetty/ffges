@@ -1,0 +1,425 @@
+
+doctype html
+head
+  meta(charset='utf-8')
+  meta(http-equiv='X-UA-Compatible', content='IE=Edge')
+  meta(content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no', name='viewport')
+  meta(name='description', content='Responsive Bootstrap 4 and web Application ui kit.')
+  title  #{title} - Futures and Forwards Grain Exchange System
+  link(rel='icon', href='favicon.ico', type='image/x-icon')  
+  link(rel='stylesheet', href='plugins/bootstrap/css/bootstrap.min.css')
+  link(rel='stylesheet', href='plugins/jvectormap/jquery-jvectormap-2.0.3.min.css')
+  link(rel='stylesheet', href='plugins/morrisjs/morris.min.css')  
+  link(rel='stylesheet', href='css/main.css')
+  link(rel='stylesheet', href='css/color_skins.css')
+body.theme-purple  
+  nav.navbar.p-l-5.p-r-5
+    ul.nav.navbar-nav.navbar-left
+      li
+        .navbar-header
+          a.bars(href='javascript:void(0);')
+          a.navbar-brand(href='index.html')
+            img(src='images/logo.svg', width='30', alt='')
+            span.m-l-10 FFGES
+      li
+        a.ls-toggle-btn(href='javascript:void(0);', data-close='true')
+          i.zmdi.zmdi-swap
+      li.hidden-md-down
+        a(href='events.html', title='Events')
+          i.zmdi.zmdi-calendar
+      li.hidden-md-down
+        a(href='mail-inbox.html', title='Inbox')
+          i.zmdi.zmdi-email
+      li
+        a(href='contact.html', title='Contact List')
+          i.zmdi.zmdi-account-box-phone
+      li.dropdown
+        a.dropdown-toggle(href='javascript:void(0);', data-toggle='dropdown', role='button')
+          i.zmdi.zmdi-notifications
+          .notify
+            span.heartbit
+            span.point
+        ul.dropdown-menu.pullDown
+          li.body
+            ul.menu.list-unstyled
+              li
+                a(href='javascript:void(0);')
+                  .media
+                    img.media-object(src='images/xs/avatar2.jpg', alt='')
+                    .media-body
+                      span.name
+                        span.time 30min ago
+                      span.message There are many variations of passages
+              li
+                a(href='javascript:void(0);')
+                  .media
+                    img.media-object(src='images/xs/avatar3.jpg', alt='')
+                    .media-body
+                      span.name
+                        span.time 31min ago
+                      span.message There are many variations of passages of Lorem Ipsum
+              li
+                a(href='javascript:void(0);')
+                  .media
+                    img.media-object(src='images/xs/avatar4.jpg', alt='')
+                    .media-body
+                      span.name
+                        span.time 35min ago
+                      span.message There are many variations of passages
+              li
+                a(href='javascript:void(0);')
+                  .media
+                    img.media-object(src='images/xs/avatar5.jpg', alt='')
+                    .media-body
+                      span.name
+                        span.time 35min ago
+                      span.message Contrary to popular belief, Lorem Ipsum random
+              li
+                a(href='javascript:void(0);')
+                  .media
+                    img.media-object(src='images/xs/avatar6.jpg', alt='')
+                    .media-body
+                      span.name
+                        span.time 1hr ago
+                      span.message There are many variations of passages
+          li.footer
+            a(href='javascript:void(0);') View All
+      li.dropdown
+        a.dropdown-toggle(href='javascript:void(0);', data-toggle='dropdown', role='button')
+          i.zmdi.zmdi-flag
+          .notify
+            span.heartbit
+            span.point
+        ul.dropdown-menu.pullDown
+          li.header Project
+          li.body
+            ul.menu.tasks.list-unstyled
+              li
+                a(href='javascript:void(0);')
+                  .progress-container.progress-primary
+                    span.progress-badge eCommerce Website
+                    .progress
+                      .progress-bar(role='progressbar', aria-valuenow='86', aria-valuemin='0', aria-valuemax='100', style='width: 86%;')
+                        span.progress-value 86%
+                    ul.list-unstyled.team-info
+                      li.m-r-15
+                        small.text-muted Team
+                      li
+                        img(src='images/xs/avatar2.jpg', alt='Avatar')
+                      li
+                        img(src='images/xs/avatar3.jpg', alt='Avatar')
+                      li
+                        img(src='images/xs/avatar4.jpg', alt='Avatar')
+              li
+                a(href='javascript:void(0);')
+                  .progress-container.progress-info
+                    span.progress-badge iOS Game Dev
+                    .progress
+                      .progress-bar(role='progressbar', aria-valuenow='45', aria-valuemin='0', aria-valuemax='100', style='width: 45%;')
+                        span.progress-value 45%
+                    ul.list-unstyled.team-info
+                      li.m-r-15
+                        small.text-muted Team
+                      li
+                        img(src='images/xs/avatar10.jpg', alt='Avatar')
+                      li
+                        img(src='images/xs/avatar9.jpg', alt='Avatar')
+                      li
+                        img(src='images/xs/avatar8.jpg', alt='Avatar')
+                      li
+                        img(src='images/xs/avatar7.jpg', alt='Avatar')
+                      li
+                        img(src='images/xs/avatar6.jpg', alt='Avatar')
+              li
+                a(href='javascript:void(0);')
+                  .progress-container.progress-warning
+                    span.progress-badge Home Development
+                    .progress
+                      .progress-bar(role='progressbar', aria-valuenow='29', aria-valuemin='0', aria-valuemax='100', style='width: 29%;')
+                        span.progress-value 29%
+                    ul.list-unstyled.team-info
+                      li.m-r-15
+                        small.text-muted Team
+                      li
+                        img(src='images/xs/avatar5.jpg', alt='Avatar')
+                      li
+                        img(src='images/xs/avatar2.jpg', alt='Avatar')
+                      li
+                        img(src='images/xs/avatar7.jpg', alt='Avatar')
+          li.footer
+            a(href='javascript:void(0);') View All
+      li.hidden-sm-down
+        .input-group
+          input.form-control(type='text', placeholder='Search...')
+          span.input-group-addon
+            i.zmdi.zmdi-search
+      li.float-right
+        a.mega-menu(href='sign-in.html', data-close='true')
+          i.zmdi.zmdi-power
+        a.js-right-sidebar(href='javascript:void(0);', data-close='true')
+          i.zmdi.zmdi-settings.zmdi-hc-spin  
+  aside#leftsidebar.sidebar
+    ul.nav.nav-tabs
+      li.nav-item
+        a.nav-link.active(data-toggle='tab', href='#dashboard')
+          i.zmdi.zmdi-home.m-r-5
+          span Menu
+      li.nav-item
+        a.nav-link(data-toggle='tab', href='#user')
+          i.zmdi.zmdi-account.m-r-5
+          span Profile
+    .tab-content
+      #dashboard.tab-pane.stretchRight.active
+        .menu
+          ul.list
+            li
+              .user-info
+                .image
+                  a(href='#')
+                    img(src='images/profile_av.jpg', alt='User')
+                .detail
+                  //- Username of logged in user
+                  h4 Jerry Etiang
+                  small Seller
+
+            //- Sidebar menu items
+            li
+              a.menu-toggle(href='javascript:void(0);')
+                i.zmdi.zmdi-home
+                span Dashboard
+              ul.ml-menu
+                li.active
+                  a(href='home') Home
+                li
+                  a(href='grain') Grain
+                li
+                  a(href='contracts') Contracts
+            li
+              a.menu-toggle(href='javascript:void(0);')
+                i.zmdi.zmdi-apps
+                span Community
+              ul.ml-menu
+                li
+                  a(href='buyers') Buyers
+                li
+                  a(href='sellers') Sellers
+                li
+                  a(href='warehouses') Warehouses
+                li
+                  a(href='blog') Blog
+            li
+              a.menu-toggle(href='javascript:void(0);')
+                i.zmdi.zmdi-shopping-cart
+                span Account
+              ul.ml-menu
+                li
+                  a(href='account') Manage Account
+                li
+                  a(href='profile') Profile
+                li
+                  a(href='bank') Bank
+                li
+                  a(href='mobileMoney') Mobile Money
+            li
+              
+              .progress-container.progress-primary.m-t-10
+                span.progress-badge Traffic this Month
+                .progress
+                  .progress-bar.progress-bar-warning(role='progressbar', aria-valuenow='67', aria-valuemin='0', aria-valuemax='100', style='width: 67%;')
+                    span.progress-value 67%
+              .progress-container.progress-info
+                span.progress-badge Server Load
+                .progress
+                  .progress-bar.progress-bar-warning(role='progressbar', aria-valuenow='86', aria-valuemin='0', aria-valuemax='100', style='width: 86%;')
+                    span.progress-value 86%
+
+  aside#rightsidebar.right-sidebar
+    ul.nav.nav-tabs
+      li.nav-item
+        a.nav-link.active(data-toggle='tab', href='#setting')
+          i.zmdi.zmdi-settings.zmdi-hc-spin
+      li.nav-item
+        a.nav-link(data-toggle='tab', href='#activity') Activity
+    .tab-content
+      #setting.tab-pane.slideRight.active
+        .slim_scroll
+          .card
+            h6 Skins
+            ul.choose-skin.list-unstyled
+              li(data-theme='purple' class='active' )
+                .purple
+              li(data-theme='blue')
+                .blue
+              li(data-theme='cyan')
+                .cyan
+              li(data-theme='green')
+                .green
+              li(data-theme='orange')
+                .orange
+              li(data-theme='blush')
+                .blush
+          .card.theme-light-dark
+            h6 Left Menu
+            button.t-light.btn.btn-default.btn-simple.btn-round.btn-block Light
+            button.t-dark.btn.btn-default.btn-round.btn-block Dark
+            button.m_img_btn.btn.btn-primary.btn-round.btn-block Sidebar Image
+          .card
+            h6 General Settings
+            ul.setting-list.list-unstyled
+              li
+                .checkbox
+                  input#checkbox1(type='checkbox')
+                  label(for='checkbox1') Report Panel Usage
+              li
+                .checkbox
+                  input#checkbox2(type='checkbox', checked='')
+                  label(for='checkbox2') Email Redirect
+              li
+                .checkbox
+                  input#checkbox3(type='checkbox', checked='')
+                  label(for='checkbox3') Notifications
+              li
+                .checkbox
+                  input#checkbox4(type='checkbox', checked='')
+                  label(for='checkbox4') Auto Updates
+          .card
+            h6 Account Settings
+            ul.setting-list.list-unstyled
+              li
+                .checkbox
+                  input#checkbox5(type='checkbox', checked='')
+                  label(for='checkbox5') Offline
+              li
+                .checkbox
+                  input#checkbox6(type='checkbox', checked='')
+                  label(for='checkbox6') Location Permission
+          .card
+            h6 Information Summary
+            .row.m-b-20
+              .col-7
+                small.displayblock MEMORY USAGE
+                h5.m-b-0.h6 512
+              .col-5
+                .sparkline(data-type='bar', data-width='97%', data-height='25px', data-bar-width='5', data-bar-spacing='3', data-bar-color='#00ced1') 8,7,9,5,6,4,6,8
+            .row.m-b-20
+              .col-7
+                small.displayblock CPU USAGE
+                h5.m-b-0.h6 90%
+              .col-5
+                .sparkline(data-type='bar', data-width='97%', data-height='25px', data-bar-width='5', data-bar-spacing='3', data-bar-color='#F15F79') 6,5,8,2,6,4,6,4
+            .row.m-b-20
+              .col-7
+                small.displayblock DAILY TRAFFIC
+                h5.m-b-0.h6 25 142
+              .col-5
+                .sparkline(data-type='bar', data-width='97%', data-height='25px', data-bar-width='5', data-bar-spacing='3', data-bar-color='#78b83e') 7,5,8,7,4,2,6,5
+            .row.m-b-40
+              .col-7
+                small.displayblock DISK USAGE
+                h5.m-b-0.h6 60.10%
+              .col-5
+                .sparkline(data-type='bar', data-width='97%', data-height='25px', data-bar-width='5', data-bar-spacing='3', data-bar-color='#457fca') 7,5,2,5,6,7,6,4
+      #activity.tab-pane.slideLeft
+        .slim_scroll
+          .card.user_activity
+            h6 Recent Activity
+            .streamline.b-accent
+              .sl-item
+                img.user.rounded-circle(src='images/xs/avatar4.jpg', alt='')
+                .sl-content
+                  h5.m-b-0 Admin Birthday
+                  small
+                    a.text-info(href='javascript:void(0);') Sophia
+              .sl-item
+                img.user.rounded-circle(src='images/xs/avatar5.jpg', alt='')
+                .sl-content
+                  h5.m-b-0 Add New Contact
+                  small
+                    a(href='javascript:void(0);') Alexander
+                  small
+                    strong P:
+                  small
+                    strong E:
+              .sl-item
+                img.user.rounded-circle(src='images/xs/avatar6.jpg', alt='')
+                .sl-content
+                  h5.m-b-0 Code Change
+                  small
+                    a(href='javascript:void(0);') Grayson
+                  small The standard chunk of Lorem Ipsum used since the 1500s is reproduced
+              .sl-item
+                img.user.rounded-circle(src='images/xs/avatar7.jpg', alt='')
+                .sl-content
+                  h5.m-b-0 New Email
+                  small
+                    a.text-info(href='javascript:void(0);') Fidel Tonn
+          .card
+            h6 Recent Attachments
+            ul.list-unstyled.activity
+              li
+                a(href='javascript:void(0)')
+                  i.zmdi.zmdi-collection-pdf.l-blush
+                  .info
+                    h4 info_258.pdf
+                    small 2MB
+              li
+                a(href='javascript:void(0)')
+                  i.zmdi.zmdi-collection-text.l-amber
+                  .info
+                    h4 newdoc_214.doc
+                    small 900KB
+              li
+                a(href='javascript:void(0)')
+                  i.zmdi.zmdi-image.l-parpl
+                  .info
+                    h4 MG_4145.jpg
+                    small 5.6MB
+              li
+                a(href='javascript:void(0)')
+                  i.zmdi.zmdi-image.l-parpl
+                  .info
+                    h4 MG_4100.jpg
+                    small 5MB
+              li
+                a(href='javascript:void(0)')
+                  i.zmdi.zmdi-collection-text.l-amber
+                  .info
+                    h4 Reports_end.doc
+                    small 780KB
+              li
+                a(href='javascript:void(0)')
+                  i.zmdi.zmdi-videocam.l-turquoise
+                  .info
+                    h4 movie2018.MKV
+                    small 750MB
+  section.content
+    .block-header
+      .row
+        .col-lg-5.col-md-5.col-sm-12
+          h2 #{title}
+            small Welcome to FFGES
+        .col-lg-7.col-md-7.col-sm-12.text-right
+          .inlineblock.text-center.m-r-15.m-l-15.hidden-md-down
+            .sparkline(data-type='bar', data-width='97%', data-height='25px', data-bar-width='2', data-bar-spacing='5', data-bar-color='#fff') 3,2,6,5,9,8,7,9,5,1,3,5,7,4,6
+            small.col-white New Users
+          .inlineblock.text-center.m-r-15.m-l-15.hidden-md-down
+            .sparkline(data-type='bar', data-width='97%', data-height='25px', data-bar-width='2', data-bar-spacing='5', data-bar-color='#fff') 1,3,5,7,4,6,3,2,6,5,9,8,7,9,5
+            small.col-white Transactions
+          button.btn.btn-white.btn-icon.btn-round.hidden-sm-down.float-right.m-l-10(type='button')
+            i.zmdi.zmdi-plus
+          ul.breadcrumb.float-md-right
+            li.breadcrumb-item
+              a(href='home')
+                i.zmdi.zmdi-home
+            li.breadcrumb-item.active #{title}
+  
+    .container-fluid          
+      block content 
+ 
+  script(src='bundles/libscripts.bundle.js')  
+  script(src='bundles/vendorscripts.bundle.js')  
+  script(src='bundles/morrisscripts.bundle.js')  
+  script(src='bundles/jvectormap.bundle.js')  
+  script(src='bundles/knob.bundle.js')  
+  script(src='bundles/mainscripts.bundle.js')
+  script(src='js/pages/index.js')  
