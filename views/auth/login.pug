@@ -1,0 +1,29 @@
+extends layout
+block content
+  .container
+    .col-md-12.content-center
+      .card-plain
+        form.form(method='POST', action='')
+          .header
+            .logo-container
+              //- img(src='https://thememakker.com/templates/oreo/html/images/logo.svg', alt='')
+            h5 Log in
+          .content
+            .input-group.input-lg
+              input.form-control(type='email', name='email' placeholder='Email')
+              span.input-group-addon
+                i.zmdi.zmdi-account-circle
+            .input-group.input-lg
+              input.form-control(type='password', name='password' placeholder='Password')
+              span.input-group-addon
+                i.zmdi.zmdi-lock
+            if errorCode
+              blockquote
+                p.blockquote.blockquote-primary.text-warning #{errorMessage}
+          .footer.text-center
+            button.btn.btn-primary.btn-round.btn-lg.btn-block.waves-effect.waves-light(type='submit') SIGN IN
+            h5
+              a.link(href='forgotPassword') Forgot Password?
+              span  . 
+              a.link(href='signup') Signup
+    

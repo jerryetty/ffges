@@ -1,2 +1,66 @@
 extends ../layout
 block content
+  .row.clearfix
+    .col-sm-12
+      .card
+        .body
+          .row.clearfix
+            .col-lg-4.col-md-4.col-sm-12.text-center
+              .body
+                h2.number.count-to.m-t-0.m-b-5(data-from='1', data-to='7', data-speed='1000', data-fresh-interval='1000') 7
+                p.text-muted Active Contracts
+            .col-lg-4.col-md-4.col-sm-12.text-center
+              .body
+                h2.number.count-to.m-t-0.m-b-5(data-from='1', data-to='15', data-speed='2000', data-fresh-interval='700') 15
+                p.text-muted Complete Contracts
+            .col-lg-4.col-md-4.col-sm-12.text-center
+              .body
+                h2.number.count-to.m-t-0.m-b-5(data-from='1', data-to='2', data-speed='2000', data-fresh-interval='100000') 2
+                p.text-muted Expired Contracts
+  .row.clearfix
+    .col-sm-12
+      .card
+        .body
+          .row.clearfix
+            .col-lg-12
+              .card
+                .header
+                  h2
+                    strong My Contracts
+                    a(href='grain_add')
+                      button.btn.btn-dark.float-right Create a contract               
+                .body
+                  table.table.table-striped.dataTable.js-exportable
+                    thead
+                      tr
+                        th #
+                        th Buyer
+                        th Grain
+                        th Quantity
+                        th Price per Kg
+                        th Created on
+                        th Expires on
+                        th Actions
+                    tfoot
+                      tr
+                        th #
+                        th Buyer
+                        th Grain
+                        th Quantity
+                        th Price per Kg
+                        th Created on
+                        th Expires on
+                        th Actions
+                    tbody
+                      tr
+                        td #
+                        td 
+                          a(href="#") Max Nandege
+                        td 
+                          a(href="#") Maize
+                        td Quantity (Kgs)                 
+                        td 1000
+                        td 7/7/2018
+                        td 25/5/2019
+                        td 
+                          a(href="#") view

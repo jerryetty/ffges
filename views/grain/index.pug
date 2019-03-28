@@ -1,2 +1,90 @@
 extends ../layout
 block content
+  .row.clearfix
+    .col-sm-12
+      .card
+        .body
+          .row.clearfix
+            .col-lg-4.col-md-4.col-sm-12.text-center
+              .body
+                h2.number.count-to.m-t-0.m-b-5(data-from='1000', data-to='18000', data-speed='1000', data-fresh-interval='1000') 18000
+                p.text-muted Total Quantity (KGs)
+                span#linecustom1 1,4,2,6,5,2,3,8,5,2
+            .col-lg-4.col-md-4.col-sm-12.text-center
+              .body
+                h2.number.count-to.m-t-0.m-b-5(data-from='0', data-to='1', data-speed='2000', data-fresh-interval='700') 1
+                p.text-muted Warehouses
+                span#linecustom2 2,9,5,5,8,5,4,2,6
+            .col-lg-4.col-md-4.col-sm-12.text-center
+              .body
+                h2.number.count-to.m-t-0.m-b-5(data-from='100000', data-to='4000000', data-speed='2000', data-fresh-interval='100000') 4000000
+                p.text-muted Total Profit
+                span#linecustom3 1,5,3,6,6,3,6,8,4,2
+  .row.clearfix.js-sweetalert
+    .col-sm-12
+      .card
+        .row.clearfix
+          .col-lg-12
+            .card
+              .header
+                h2
+                  strong My Grain
+                  a(href='grain_add')
+                    button.btn.btn-dark.float-right Add Grain               
+              .body
+                table.table.table-striped.dataTable.js-exportable
+                  thead
+                    tr
+                      th #
+                      th Type
+                      th Grade
+                      th Quantity (Kgs)                 
+                      th Price (@Kg)
+                      th Delivery Date
+                      th Warehouse
+                  tfoot
+                    tr
+                      th #
+                      th Type
+                      th Grade
+                      th Quantity (Kgs)                 
+                      th Price (@Kg)
+                      th Delivery Date
+                      th Warehouse
+                  tbody
+                    tr
+                      th(scope='row') 1
+                      td Maize
+                      td 7
+                      td 1000
+                      td 500
+                      td 7/7/2018
+                      td 
+                        a(href='#') Mukasa Cereal Warehouse
+                    tr
+                      th(scope='row') 1
+                      td Maize
+                      td 4
+                      td 1000
+                      td 900
+                      td 7/7/2018
+                      td 
+                        a(href='#') Mukasa Cereal Warehouse
+                    tr
+                      th(scope='row') 1
+                      td Beans
+                      td 3
+                      td 1000
+                      td 700
+                      td 7/7/2018
+                      td 
+                        a(href='#') Mukasa Cereal Warehouse
+                    tr
+                      th(scope='row') 1
+                      td G-Nuts
+                      td 1
+                      td 15000
+                      td 1500
+                      td 7/7/2018
+                      td 
+                        a(href='#') Mukasa Cereal Warehouse

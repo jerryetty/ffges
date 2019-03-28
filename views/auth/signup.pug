@@ -1,0 +1,45 @@
+extends layout
+block content
+  .container
+    .col-md-12.content-center
+      .card-plain
+        form.form(method='POST', action='')
+          .header
+            .logo-container
+              img(src='https://thememakker.com/templates/oreo/html/images/logo.svg', alt='')
+            h5 Sign Up
+            span Create an account to use this Platform
+          .content
+            .input-group
+              input.form-control(type='text', name='name', placeholder='Full name')
+              span.input-group-addon
+                i.zmdi.zmdi-account-circle
+            .input-group
+              input.form-control(type='email', name='email', placeholder='Email')
+              span.input-group-addon
+                i.zmdi.zmdi-email
+            .input-group
+              input.form-control(type='password', name='password1', placeholder='Password')
+              span.input-group-addon
+                i.zmdi.zmdi-lock
+            .input-group
+              input.form-control(type='password', name='password2', placeholder='Confirm Password')
+              span.input-group-addon
+                i.zmdi.zmdi-lock
+          hr
+          p I intend to use this platform as a
+          .radio
+            input(type='radio', name='role', value='1')
+            label(for='seller')
+              span Seller
+            input(type='radio', name='role', value='2')
+            label(for='Buyer')
+              span Buyer
+            input(type='radio', name='role', value='3')
+            label(for='warehouse')
+              span Warehouse
+          .footer.text-center
+            button.btn.btn-primary.btn-round.btn-lg.btn-block.waves-effect.waves-light(type='submit') SIGN UP
+            h5
+              a.link(href='login') Login
+    

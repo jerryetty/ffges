@@ -7,6 +7,10 @@ module.exports = {
     res.render('grain/index', { title: 'Grain' })
   },
 
+  addGrain: function (req, res, next) {
+    res.render('grain/add', { title: 'Add Grain' })
+  },
+
   contracts: function (req, res, next) {
     res.render('contracts/index', { title: 'Contracts' })
   },

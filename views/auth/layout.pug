@@ -1,0 +1,64 @@
+doctype html
+head
+  meta(charset='utf-8')
+  meta(http-equiv='X-UA-Compatible', content='IE=Edge')
+  meta(content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no', name='viewport')
+  meta(name='description', content='Responsive Bootstrap 4 and web Application ui kit.')
+  title= title  
+  link(rel='icon', href='favicon.ico', type='image/x-icon')  
+  link(rel='stylesheet', href='plugins/bootstrap/css/bootstrap.min.css')
+  link(rel='stylesheet', href='css/main.css')
+  link(rel='stylesheet', href='css/authentication.css')
+  link(rel='stylesheet', href='css/color_skins.css')
+
+body.theme-purple.authentication.sidebar-collapse
+  nav.navbar.navbar-expand-lg.fixed-top.navbar-transparent
+    .container
+      .navbar-translate.n_logo
+        a.navbar-brand(href='javascript:void(0);', title='', target='_blank') FFGES
+        button.navbar-toggler(type='button')
+          span.navbar-toggler-bar.bar1
+          span.navbar-toggler-bar.bar2
+          span.navbar-toggler-bar.bar3
+      .navbar-collapse
+        ul.navbar-nav
+          li.nav-item
+            a.nav-link(href='home') Home
+          li.nav-item
+            a.nav-link(href='javascript:void(0);') Predictions
+          li.nav-item
+            a.nav-link(title='Follow us on Twitter', href='javascript:void(0);', target='_blank')
+              i.zmdi.zmdi-twitter
+              p.d-lg-none.d-xl-none Twitter
+          li.nav-item
+            a.nav-link(title='Like us on Facebook', href='javascript:void(0);', target='_blank')
+              i.zmdi.zmdi-facebook
+              p.d-lg-none.d-xl-none Facebook
+          li.nav-item
+            a.nav-link(title='Follow us on Instagram', href='javascript:void(0);', target='_blank')
+              i.zmdi.zmdi-instagram
+              p.d-lg-none.d-xl-none Instagram
+  .page-header
+    //- .page-header-image(style='background-image:url(images/login.jpg)')
+    block content
+    footer.footer
+      .container
+        nav
+          ul
+            li
+              a(href='http://thememakker.com/contact/', target='_blank') Contact Us
+            li
+              a(href='http://thememakker.com/about/', target='_blank') About Us
+            li
+              a(href='javascript:void(0);') FAQ
+        .copyright
+          script.
+            document.write(new Date().getFullYear())
+          span
+            a(href='http://thememakker.com/', target='_blank') ThemeMakker
+  script(src='bundles/libscripts.bundle.js')
+  script(src='bundles/vendorscripts.bundle.js')
+  script.
+    $(".navbar-toggler").on('click',function() {
+    $("html").toggleClass("nav-open");
+    });

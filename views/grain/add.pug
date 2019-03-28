@@ -1,0 +1,57 @@
+extends ../layout
+block content
+  .row.clearfix
+    .col-lg-12.col-md-12.col-sm-12
+      .card
+        .header
+          h2
+            strong Advanced
+          ul.header-dropdown
+            li.dropdown
+              a.dropdown-toggle(href='javascript:void(0);', data-toggle='dropdown', role='button', aria-haspopup='true', aria-expanded='false')
+                i.zmdi.zmdi-more
+              ul.dropdown-menu
+                li
+                  a(href='javascript:void(0);') Action
+                li
+                  a(href='javascript:void(0);') Another action
+                li
+                  a(href='javascript:void(0);') Something else
+            li.remove
+              a.boxs-close(role='button')
+                i.zmdi.zmdi-close
+        .body
+          form#wizard_with_validation(method='POST')
+            h3 Grain Information
+            fieldset
+              .form-group.form-float
+                label
+                  strong Type *
+                input.form-control(type='text', placeholder='Eg. Maize', name='type', required='')
+              .form-group.form-float
+                label
+                  strong Grade *
+                input#password.form-control(type='number', placeholder='Eg. 4', name='grade', required='')
+              .form-group.form-float
+                label
+                  strong Price per Kg *
+                input.form-control.money(type='number', placeholder='Eg. 1000', name='confirm', required='')
+            h3 Storage Information
+            fieldset
+              .form-group.form-float
+                label(for="")
+                  strong Quantity *
+                input.form-control(type='text', name='quantity', placeholder='Quantity in Kgs', required='')
+              .form-group.form-float
+                label(for="")
+                  strong Delivery Date *
+                input.form-control.date(type='date', name='delivery_date', placeholder='Ex: 30/07/2016', required='')
+              .form-group.form-float
+                label(for="")
+                  strong Warehouse *
+                input.form-control(type='text', name='warehouse', placeholder='Warehouse', required='', <='', div='')
+                
+            h3 Terms &amp; Conditions - Finish
+            fieldset
+              input#acceptTerms-2(name='acceptTerms', type='checkbox', required='')
+              label(for='acceptTerms-2') I agree with the Terms and Conditions.
