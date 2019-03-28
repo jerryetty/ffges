@@ -66,6 +66,13 @@ module.exports = {
           })
         }
       })
+
+      firebase.auth().onAuthStateChanged(function (user) {
+        if (user) {
+          req.user = user
+          res.redirect('home')
+        }
+      })
     }
   },
 
