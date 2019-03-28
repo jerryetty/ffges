@@ -19,8 +19,8 @@ router.get('/bank', checkAuth.isAuthenticated, Pages.bank)
 router.get('/mobileMoney', checkAuth.isAuthenticated, Pages.mobileMoney)
 
 router.get('/login', Auth.login)
-router.get('/signup', checkAuth.isAuthenticated, Auth.signup)
-router.get('/forgotPassword', checkAuth.isAuthenticated, Auth.forgotPassword)
+router.get('/signup', Auth.signup)
+router.get('/forgotPassword', Auth.forgotPassword)
 router.get('/logout', Auth.logout)
 
 router.post('/login', Auth.loginPost)
